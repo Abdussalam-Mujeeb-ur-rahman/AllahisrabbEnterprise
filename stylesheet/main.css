@@ -103,7 +103,7 @@
     display: none ;
     width: 100%;
     margin: 0;
-    background-image: url(./images/food6.jpg);
+    background-image: url(images/food6.jpg);
     background-color: rgba(0, 0, 0, 0.527);
     /* display: flex; */
     justify-content: center;
@@ -121,7 +121,7 @@
     width: 97%;
     border: blue;
     background-color: rgba(0, 0, 0, 0.685);
-    background-image: url(/images/food2.jpg);
+    background-image: url(images/food2.jpg);
     padding: 10px 25px;
     height: 100%;
     background-blend-mode: soft-light;
