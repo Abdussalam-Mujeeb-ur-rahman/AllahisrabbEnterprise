@@ -103,8 +103,8 @@
     display: none ;
     width: 100%;
     margin: 0;
-    background-image: url(images/food6.jpg);
-    background-color: rgba(0, 0, 0, 0.527);
+    background-image: url(/foods/food6.jpg);
+    background-color: rgba(0, 0, 0, 0.918);
     /* display: flex; */
     justify-content: center;
     align-items: center;
@@ -121,7 +121,9 @@
     width: 97%;
     border: blue;
     background-color: rgba(0, 0, 0, 0.685);
-    background-image: url(images/food2.jpg);
+    background-image: url(/foods/food2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 10px 25px;
     height: 100%;
     background-blend-mode: soft-light;
@@ -199,8 +201,8 @@
     justify-content: center;
 }
 #image-footer img{
-    width: 50px;
-    height: 50px;
+    width: 1rem;
+    height: 1rem;
     margin: 5px;
 }
 #main-footer{
