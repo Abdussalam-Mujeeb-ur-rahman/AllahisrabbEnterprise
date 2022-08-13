@@ -1,1 +1,1 @@
-This is created by Abdussalam Mujeeb-ur-rahman
+This is an e-commerce website created by Abdussalam-Mujeeb-ur-rahman
