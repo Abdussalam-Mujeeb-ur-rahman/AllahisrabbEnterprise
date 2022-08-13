@@ -12,7 +12,10 @@ proceed.addEventListener("click",(e)=>{
     page.style.opacity="1";
 })
 // console.log(proceed)
-// console.log(retreat)
+
+retreat.addEventListener("click", (e)=>{
+    location.href = ("https://www.google.com")
+})
 
 harmburger.addEventListener("click",(e)=>{
     navigate.classList.toggle("slideout");
