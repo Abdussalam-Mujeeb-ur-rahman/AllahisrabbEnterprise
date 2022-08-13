@@ -1,0 +1,305 @@
+.logo{
+    position: relative;
+    font-family: cursive;
+    transition: all 2s;
+    animation-name: ALLAHISRABB;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-image: linear-gradient(-225deg,red,green, blue, yellow, pink);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: white;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.logo span:first-child{
+    font-size: 18px;
+}
+.logo span:nth-child(2){
+    font-size: 20px;
+}
+.logo span:nth-child(3){
+    font-size: 22px;
+}
+.logo span:nth-child(4){
+    font-size: 24px;
+}
+.logo span:nth-child(5){
+    font-size: 26px;
+}
+.logo span:nth-child(6){
+    font-size: 28px;
+}
+.logo span:nth-child(7){
+    font-size: 26px;
+}
+.logo span:nth-child(8){
+    font-size: 24px;
+}
+.logo span:nth-child(9){
+    font-size: 22px;
+}
+.logo span:nth-child(10){
+    font-size: 20px;
+}
+.logo span:nth-child(11){
+    font-size: 18px;
+}
+.logo span{
+    font-family: cursive;
+    font-weight: bolder;
+
+}
+
+/* .............................................................logo ends here............................. */
+
+
+
+/* ..... ...................ALLAHISRABB............................................................. */
+
+@keyframes ALLAHISRABB {
+    0%{
+       opacity: 0;
+       font-weight: bold;
+       color: rgba(0, 0, 255, 0);
+       text-shadow: 2px 2px 2px rgba(255, 0, 0, 0), 2px 2px 2px rgba(0, 0, 255, 0);
+    }
+    10%{
+        display: block;
+        opacity: 1;
+        font-weight: bolder;
+        color: white;
+        /* text-shadow: 2px 2px 2px rgb(0, 174, 255), 2px 2px 2px rgb(0, 255, 85); */
+    }
+    90%{
+        display: block;
+        opacity: 1;
+        font-weight: bolder;
+        color: white;
+        /* text-shadow: 2px 2px 2px rgb(0, 174, 255), 2px 2px 2px rgb(0, 255, 85); */
+        background-position: 200% center;
+    }
+    100%{
+        display: none;
+        opacity: 0;
+        font-weight: bold;
+        color: rgba(234, 0, 255, 0);
+        /* text-shadow: 2px 2px 2px rgba(0, 145, 255, 0), 2px 2px 2px rgba(0, 221, 255, 0); */
+        background-position: 200% center;
+    }
+}
+
+/* .............ALLAHISRABB ENDS HERE........  */
+
+
+
+/* PAGE STARTS HERE  */
+
+#page{
+    display: none ;
+    width: 100%;
+    margin: 0;
+    background-image: url(food6.jpg);
+    background-color: rgba(0, 0, 0, 0.527);
+    /* display: flex; */
+    justify-content: center;
+    align-items: flex-start;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: all 2s;
+    opacity: 1;
+    min-height: 100vh;
+}
+.content-holder{
+    margin-top: 1rem;
+    width: 97%;
+    border: blue;
+    background-color: rgba(0, 0, 0, 0.685);
+    background-image: url(/images/food2.jpg);
+    padding: 10px 25px;
+    height: 100%;
+    background-blend-mode: soft-light;
+}
+.content-holder-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: grey;
+    /* position: fixed */
+}
+.content-holder-nav .navigate li{
+    display: inline;
+    padding: 5px;
+}
+.content-holder-nav .navigate + .nav-end{
+    display: flex;
+    gap: 10px;
+}
+.content-holder-nav .navigate + .nav-end .nav-end-child{
+    padding: 5px;
+}
+#harmburger{
+    display: none;
+    flex-direction: column;
+    gap: 2px;
+}
+#harmburger span{
+    height: 5px;
+    width: 30px;
+    background-color: black;
+    border-radius: 5px;
+}
+.food-container-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.foods{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.719);
+}
+.foods img{
+    width: 100%;
+    height: 100%;
+}
+.food-container-wrapper .foods .button-wrapper{
+    background-color: rgba(255, 255, 255, 0.459);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: -104%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: all 1s;
+}
+.food-container-wrapper .foods .button-wrapper button{
+    padding: 5px;
+    background-color: rgba(255, 68, 0, 0.664);
+    border: none;
+    box-shadow: 2px 2px 2px black;
+    font-weight: bolder;
+}
+.foods:hover .button-wrapper{
+    display: flex;
+}
+
+
+
+
+@media screen and (max-width:900px){
+    #harmburger{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -200%;
+        float: right;
+        z-index: 2;
+        padding: 5px;
+        background-image: linear-gradient(white,black);
+    }
+    .slideout{
+        left: 0% !important;
+    }
+    .content-holder-nav{
+        display: block;
+    }
+    .content-holder-nav .navigate + .nav-end{
+        display: none;
+    }
+    .content-holder-nav .logo{
+        float: left;
+        display: inline;
+    }
+    .content-holder-nav .navigate{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(255, 228, 196, 0.76);
+        position: fixed;
+        left: 100%;
+        top: 0%;
+        z-index: 1;
+        transition: all 2s;
+    }
+    .video-holder{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .video-holder #order_your_food{
+        width: 100%;
+    }
+    .food-section{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+    .food-container-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .food-container-wrapper:last-of-type{
+        display: none;
+    }
+    .food-container-wrapper .foods .button-wrapper button{
+        font-size: 50%;
+    }
+    .food-container-wrapper .foods .button-wrapper{
+        border-radius: inherit;
+        width: 100%;
+    }
+    .foods{
+        width: 15vh;
+        height: 15vh;
+        background-color: white;
+        border-radius: 50%;
+        /* border: 2px red solid; */
+        animation-name: foods;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    .foods img{
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+    }
+    @keyframes foods {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+}
+
+
+
+
+@media screen and (min-width:901px){
+    .video-holder{
+        width: 100%;
+        margin-top: 10px;
+        height: 50vh;
+        background-color: grey;
+    }
+    .video-holder #order_your_food{
+        width: 100%;
+        height:100%;
+    }
+    .foods{
+        width: 30%;
+        height: 20vh;
+        background-color: white;
+    }
+}

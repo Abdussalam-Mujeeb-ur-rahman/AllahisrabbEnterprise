@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}body{
+    background-color: black;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    border: 2px solid rgba(255, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    transition: all 2s;
+}
+#ALLAHISRABB{
+    position: relative;
+    padding: 20px;
+    transition: all 2s;
+    animation-name: ALLAHISRABB;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-image: linear-gradient(-225deg,red,green, blue, yellow, pink);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: white;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+@keyframes ALLAHISRABB {
+    0%{
+       opacity: 0;
+       font-weight: bold;
+       color: rgba(0, 0, 255, 0);
+       text-shadow: 2px 2px 2px rgba(255, 0, 0, 0), 2px 2px 2px rgba(0, 0, 255, 0);
+    }
+    10%{
+        display: block;
+        opacity: 1;
+        font-weight: bolder;
+        color: white;
+        /* text-shadow: 2px 2px 2px rgb(0, 174, 255), 2px 2px 2px rgb(0, 255, 85); */
+    }
+    90%{
+        display: block;
+        opacity: 1;
+        font-weight: bolder;
+        color: white;
+        /* text-shadow: 2px 2px 2px rgb(0, 174, 255), 2px 2px 2px rgb(0, 255, 85); */
+        background-position: 200% center;
+    }
+    100%{
+        display: none;
+        opacity: 0;
+        font-weight: bold;
+        color: rgba(234, 0, 255, 0);
+        /* text-shadow: 2px 2px 2px rgba(0, 145, 255, 0), 2px 2px 2px rgba(0, 221, 255, 0); */
+        background-position: 200% center;
+    }
+}
+#ALLAHISRABB + div{
+    position: absolute;
+    padding: 1rem;
+    transition: all 2s;
+    animation-name: welcome;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+#ALLAHISRABB + div > p{
+    background-image: inherit;
+    font-weight: bolder;
+    text-align: center;
+}
+#ALLAHISRABB + div > div{
+    background-image: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#ALLAHISRABB + div > div > button{
+    background-color: rgba(255, 0, 0, 0.411);
+    padding: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 5px;
+    transition: all 1s;
+}
+#ALLAHISRABB + div > div > button:hover{
+background-color: rgba(255, 0, 0, 0.716);
+color: green;
+cursor: grab;
+}
+#ALLAHISRABB span:first-child{
+    font-size: 18px;
+}
+#ALLAHISRABB span:nth-child(2){
+    font-size: 20px;
+}
+#ALLAHISRABB span:nth-child(3){
+    font-size: 22px;
+}
+#ALLAHISRABB span:nth-child(4){
+    font-size: 24px;
+}
+#ALLAHISRABB span:nth-child(5){
+    font-size: 26px;
+}
+#ALLAHISRABB span:nth-child(6){
+    font-size: 28px;
+}
+#ALLAHISRABB span:nth-child(7){
+    font-size: 26px;
+}
+#ALLAHISRABB span:nth-child(8){
+    font-size: 24px;
+}
+#ALLAHISRABB span:nth-child(9){
+    font-size: 22px;
+}
+#ALLAHISRABB span:nth-child(10){
+    font-size: 20px;
+}
+#ALLAHISRABB span:nth-child(11){
+    font-size: 18px;
+}
+#ALLAHISRABB span{
+    font-family: cursive;
+    font-weight: bolder;
+
+}
+@keyframes welcome {
+    0%{
+        opacity: 0;
+    }
+    50%{
+    opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        font-family: cursive;
+        font-weight: bold;
+        opacity: 1;
+        border-radius: 15px;
+        background-image: linear-gradient(to right, white, grey);
+        box-shadow: 2px 2px 2px grey;
+        z-index: 1;
+    }
+}
+
+/* ..................................................sign up page.............  */
+
+.sign-up-page{
+    width: 100%;
+    height: 100vh;
+    background-image: url(food6.jpg);
+    background-color: rgba(0, 0, 0, 0.812);
+    background-blend-mode: soft-light;
+    background-size: contain;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.form-wrapper{
+    background-image: linear-gradient(white, grey);
+    width: 80%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px white;
+}
+.details-wrapper{
+    padding: 10px;
+    text-align: center;
+}
+.details-wrapper legend{
+    color: rgb(18, 18, 139);
+}
+.input{
+    border: none;
+    outline: none;
+    width: 20%;
+    color: rgb(18, 18, 139);
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(white, rgba(128, 128, 128, 0.723)
+    );
+    padding: 5px;
+    margin-top: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.372);
+    transition: width 1s;
+}
+.input:focus{
+    width: 60%;
+}
+.button{
+    background-image: linear-gradient(rgba(55, 0, 0, 0.179) ,rgb(18, 18, 139));
+    padding: 5px;
+    width: 20%;
+    color: rgb(245, 245, 245);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.372);
+    transition: all 1s;
+}
+.button:hover{
+    color: whitesmoke;
+    background-color: rgba(255, 0, 0, 0.708);
+    width: 60%;
+}
+a{
+    text-decoration: none;
+}
+
+/* .. ..........................main page........... */
