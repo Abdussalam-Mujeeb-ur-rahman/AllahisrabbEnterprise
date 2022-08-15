@@ -103,7 +103,7 @@
     display: none ;
     width: 100%;
     margin: 0;
-    background-image: url(/foods/food6.jpg);
+    background-image: url(../foods/food2.jpg);
     background-color: rgba(0, 0, 0, 0.918);
     /* display: flex; */
     justify-content: center;
