@@ -121,7 +121,7 @@
     width: 97%;
     border: blue;
     background-color: rgba(0, 0, 0, 0.685);
-    background-image: url(/foods/food2.jpg);
+    background-image: url(../foods/food2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px 25px;
