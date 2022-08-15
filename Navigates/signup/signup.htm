@@ -15,27 +15,33 @@
            
         </div>
         <div class="form-wrapper">
-         <form action="" class="signup" method="get">
+         <form action="/index.htm" class="signup" method="get">
             <fieldset class="details-wrapper">
                 <legend>ENTER DETAILS</legend><br>
                     <div class="details-holder">
                         <label for="fullname">Enter Your Fullname</label><br>
-                        <input type="text" id="fullname" name="fullname" required class="input">
+                        <input type="text" id="fullname" name="fullname" required class="input" autocomplete="yes">
                     </div><br>
                     <div class="details-holder">
                         <label for="email">Enter Your Email</label><br>
-                        <input type="email" name="email" id="email" required class="input">
+                        <input type="email" name="email" id="email" required class="input" autocomplete="yes">
                     </div>
                 </fieldset><br>
                 <fieldset class="details-wrapper">
                     <legend>ENTER PREFERRED PASSWORD</legend><br>
                     <div class="details-holder">
                         <label for="password">Enter Your Preferred Password</label><br>
-                        <input type="password" name="password" id="password" required class="input password">
+                        <input type="password" name="password" id="password" required class="input password"><br>
+                        <p id="password-hint" class="hints">
+                            *password must be longer than six characters*
+                        </p>
                     </div><br>
                     <div class="details-holder">
                         <label for="confirmPassword">Confirm Password</label><br>
-                        <input type="password" name="confirmPassword" id="confirmPassword" class="input confirmPassword">
+                        <input type="password" name="confirmPassword" id="confirmPassword" class="input confirmPassword"><br>
+                        <p id="confirmPassword-hint" class="hints">
+                            *Passwords don't match*
+                        </p>
                     </div>
                 </fieldset><br>
                 <div>

@@ -112,7 +112,7 @@
     background-blend-mode: soft-light;
     background-size: cover;
     background-attachment: fixed;
-    transition: all 2s;
+    transition: all 1s;
     opacity: 1;
     min-height: 100vh;
 }
@@ -254,7 +254,7 @@
         left: 100%;
         top: 0%;
         z-index: 1;
-        transition: all 2s;
+        transition: all 1s;
     }
     .video-holder{
         width: 100%;
@@ -326,5 +326,8 @@
         width: 30%;
         height: 20vh;
         background-color: white;
+    }
+    .content-holder-nav .nav-end a{
+        visibility: hidden;
     }
 }

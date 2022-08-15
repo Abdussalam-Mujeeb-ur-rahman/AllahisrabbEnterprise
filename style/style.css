@@ -169,7 +169,7 @@ cursor: grab;
 .sign-up-page{
     width: 100%;
     height: 100vh;
-    background-image: url(foods/food2.jpg);
+    background-image: url(/foods/food2.jpg);
     background-color: rgba(0, 0, 0, 0.812);
     background-blend-mode: soft-light;
     background-size: contain;
@@ -231,5 +231,9 @@ cursor: grab;
 a{
     text-decoration: none;
 }
-
-/* .. ..........................main page........... */
+.hints{
+    color: red;
+}
+#password-hint, #confirmPassword-hint{
+    opacity: 0;
+}
