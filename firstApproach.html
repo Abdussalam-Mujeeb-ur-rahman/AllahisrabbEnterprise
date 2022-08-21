@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVE IT ENTERPRISE</title>
+    <link rel="stylesheet" href="/stylesheets/firstApproach/firstApproachSmallerScreen.css">
+    <link rel="stylesheet" href="/stylesheets/firstApproach/firstApproachBiggerrScreen.css">
+    <link rel="stylesheet" href="/stylesheets/firstApproach/firstApproach.css">
+    <script src="/Scripts/firstApproach/firstApproach.js" defer></script>
+</head>
+<body>
+    <main class="main_page">
+        <!-- CREATING A NAV BAR-->
+        <nav class="nav_bar">
+            <!--LOGO HERE-->
+            <div class="logo_harmburger">
+                <div class="logo">
+                    <h2>
+                    COVE ENT.
+                    </h2>
+                </div>
+                <!--LOGO ENDS HERE-->
+            
+                <!--HARMBURGER STARTS HERE-->
+                <div class="harmburger" id="harmburger">
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                </div>                
+                <!--HARMBURGER ENDS HERE-->
+            </div>
+
+            <!--NAVIGATE TO OTHERS-->
+            <!--OTHERS-->
+            <ul class="links" id="links">
+                <li><button>HOME</button></li>
+                <li><button>ABOUT</button></li>
+                <li><button>FAQ</a></button>
+                <li><button>CONTACT</button></li>
+                <li><button class="nav_button" id="home_login_button">
+                    LOGIN
+                </button></li>
+            </ul>
+            <!--NAVIGATE TO OTHERS ENDS HERE-->
+        </nav>
+        <!--NAV BAR ENDS HERE-->
+
+        
+             <!--LOGIN AND SIGN UP HERE-->
+        <div class="form_container" id="form_container">
+            <div class="form-holder" id="form_holder">
+                            <!-- the buttons  -->
+            <div class="form_buttons">
+                <button id="loginFormButton">LOGIN</button>
+                <button id="signupFormButton">SIGNUP</button>
+            </div>
+            <!-- the buttons ends here  -->
+            <!-- forms starts here  -->
+            <div class="form-wrapper">
+               <!-- login form starts here  -->
+                <div class="form" id="signup_form">
+                   <form action="" method="post">
+                        <div class="details">
+                             <label for="firstName">Enter your first name</label><br>
+                             <input type="text" name="firstName" id="firstName" required><br>
+                        </div><br><br>
+                        <div class="details">
+                            <label for="lastName">Enter your last name</label><br>
+                            <input type="text" name="lastName" id="lastName" required><br>
+                        </div><br><br>
+                        <div class="details">
+                             <label for="email">Enter your email</label><br>
+                             <input type="email" name="email" id="email" required><br>
+                        </div><br><br>
+                        <div class="details">
+                             <label for="password">Enter your password</label><br>
+                             <input type="password" name="password" id="password" required><br>
+                        </div><br><br>
+                        <div class="details">
+                             <label for="confirmPassword">Confirm your password</label><br>
+                             <input type="password" name="confirmPassword" id="confirmPassword" required><br>
+                        </div><br><br>
+                        <div class="details">
+                             <input type="submit" value="Submit" id="Submit" required><br>
+                        </div>
+                    </form>
+                 </div>
+            <!-- login form ends here -->
+            <!-- signup form here -->
+            <div class="form" id="login_form">
+                <form action="" method="post">
+                    <div class="details">
+                        <label for="email">Enter your email</label><br>
+                        <input type="email" name="email" id="email" required><br>
+                    </div><br><br><br>
+                    <div class="details">
+                        <label for="password">Enter your password</label><br>
+                        <input type="password" name="password" id="password" required><br>
+                    </div><br><br><br><br><br>
+                    <div class="details">
+                        <input type="submit" value="Submit" id="Submit" required><br>
+                    </div>
+                </form>
+            </div>
+            <!-- signup form ends here  -->
+            </div>
+
+            </div>
+        </div>
+        
+       
+       
+
+    </main>
+</body>
+</html>
