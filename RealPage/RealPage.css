@@ -286,8 +286,26 @@ section .item_container .item_holder div span{
     font-size: 18px;
 }
 
+#mission_vision{
+    display: none;
+    background: transparent;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: white;
+}
 
-
+.mv{
+    background-color: rgba(255, 255, 255, 0.646);
+    border-radius: 15px;
+    width: 80%;
+    height: 200px;
+    padding: 10px;
+    box-shadow: 0px 8px 54px grey;
+    display: none;
+    font-size: 1.5rem;
+}
 
 
 
@@ -300,15 +318,19 @@ footer{
     padding: 80px 17%;
     background-color: var(--text-color);
     display: none;
+    box-shadow: 2px 15px 80px grey;
 }
 
 /* LIGHTMODE EFFECTS STARTS HERE  */
 .black_backgroundColor{
-    background-color: var(--text-color);
+    background-color: var(--text-color) !important;
+} 
+.white_backgroundColor{
+    background-color: white !important;
 } 
 .white_textColor{
     color: var(--bg-color);
 }
 .black_textColor{
-    color: var(--text-color);
+    color: black !important;
 }
