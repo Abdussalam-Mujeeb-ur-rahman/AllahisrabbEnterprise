@@ -15,6 +15,8 @@ const female = document.getElementById("female");
 const male = document.getElementById("male");
 const footer = document.getElementById("footer");
 const home = document.getElementById("home");
+const searchIcon = document.getElementById("search-icon");
+const search_here = document.getElementById("search_here");
 
 const kids = document.getElementsByClassName("kid");
 const men = document.getElementsByClassName("men");
@@ -43,6 +45,10 @@ home.addEventListener("click", (e) => {
     items_wrapper.style.display="none";
 })
 
+searchIcon.addEventListener("click", (e) => {
+    search_here.classList.toggle("search_here_inOut");
+})
+
 
 
 
@@ -58,3 +64,10 @@ off_product = (item) => {
         item[i].style.display="none";
     };
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+const light_mode = document.getElementById("light_mode");
+
+light_mode.addEventListener("click", (e) => {
+    
+})

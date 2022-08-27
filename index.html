@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVE IT ENTERPRISE</title>
+    <link rel="stylesheet" href="/stylesheets/firstApproach/firstApproachSmallerScreen.css">
+    <link rel="stylesheet" href="/stylesheets/firstApproach/firstApproachBiggerrScreen.css">
+    <link rel="stylesheet" href="/stylesheets/firstApproach/firstApproach.css">
+    <script src="/Scripts/firstApproach/firstApproach.js" defer></script>
+</head>
+<body>
+    <main class="main_page">
+        <!-- CREATING A NAV BAR-->
+        <nav class="nav_bar">
+            <!--LOGO HERE-->
+            <div class="logo_harmburger">
+                <div class="logo">
+                    <h2>
+                    COVE ENT.
+                    </h2>
+                </div>
+                <!--LOGO ENDS HERE-->
+            
+                <!--HARMBURGER STARTS HERE-->
+                <div class="harmburger" id="harmburger">
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                    <div class="lines"></div>
+                </div>                
+                <!--HARMBURGER ENDS HERE-->
+            </div>
+
+            <!--NAVIGATE TO OTHERS-->
+            <!--OTHERS-->
+            <ul class="links" id="links">
+                <li><button id="home">HOME</button></li>
+                <li><button id="about">ABOUT</button></li>
+                <li><button id="faq">FAQ</a></button>
+                <li><button id="contact">CONTACT</button></li>
+                <li><button class="nav_button" id="home_login_button">
+                    LOGIN
+                </button></li>
+            </ul>
+            <!--NAVIGATE TO OTHERS ENDS HERE-->
+        </nav>
+        <!--NAV BAR ENDS HERE-->
+
+        
+             <!--LOGIN AND SIGN UP HERE-->
+        <div class="form_container" id="form_container">
+            <div class="form-holder" id="form_holder">
+                            <!-- the buttons  -->
+            <div class="form_buttons">
+                <button id="loginFormButton" class="button">LOGIN</button>
+                <button id="signupFormButton" class="button">SIGNUP</button>
+            </div>
+            <!-- the buttons ends here  -->
+            <!-- forms starts here  -->
+            <div class="form-wrapper">
+               <!-- signup form starts here  -->
+                <div class="form" id="signup_form">
+                   <form action="RealPage/RealPage.htm" method="get">
+                        <div class="details">
+                             <label for="firstName">Enter your first name</label><br>
+                             <input type="text" name="firstName" id="firstName" required><br>
+                        </div>
+                        <div class="details">
+                            <label for="lastName">Enter your last name</label><br>
+                            <input type="text" name="lastName" id="lastName" required><br>
+                        </div>
+                        <div class="details">
+                             <label for="email">Enter your email</label><br>
+                             <input type="email" name="email" id="email" required><br>
+                        </div>
+                        <div class="details">
+                             <label for="password">Enter your password</label><br>
+                             <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain atleast one number and one uppercase and lowercase letter, and at least 8 or more characters"  required>
+                             <p id="passwordNotice">Must contain: <br><span id="eight" class="passwordNotice">atleast 8 characters</span><br><span id="number" class="passwordNotice"> atleast a number</span><br><span id="lower" class="passwordNotice"> atleast a lowercase letter</span><br><span id="upper" class="passwordNotice"> atleast an uppercase letter</span></p>
+                        </div><br>
+                        <div class="details">
+                             <label for="confirmPassword">Confirm your password</label><br>
+                             <input type="password" name="confirmPassword" id="confirmPassword" required><br>
+                             <p id="confirmPasswordNotice" class="passwordNotice">Passwords must match</p>
+                        </div>
+                        <div class="details">
+                             <input type="submit" value="Submit" id="Submit" class="button" required><br>
+                        </div>
+                    </form>
+                 </div>
+            <!-- signup form ends here -->
+            <!-- login form here -->
+            <div class="form" id="login_form">
+                <form action="RealPage/RealPage.htm" method="get">
+                    <div class="details">
+                        <label for="email">Enter your email</label><br>
+                        <input type="email" name="email" id="LoginEmail" required><br>
+                    </div><br><br><br>
+                    <div class="details">
+                        <label for="password">Enter your password</label><br>
+                        <input type="password" name="password" id="LoginPassword" required><br>
+                    </div><br><br><br><br><br>
+                    <div class="details">
+                        <input type="submit" value="Submit" id="LoginSubmit" class="button" required><br>
+                    </div>
+                </form>
+            </div>
+            <!-- login form ends here  -->
+            </div>
+
+            </div>
+        </div>
+
+        <!-- ABOUT SECTION STARTS HERE  -->
+        <section class="about" id="aboutContent">
+            <div class="writeup"><br>
+                <p>COVE IT ENTERPRISE covers all aspect of footwear of different sizes, gender, locality, nationality</p><br>
+                <p>Another very special thing about our reputable organisation is that  <strong>** IT IS GLOBALLY ACCEPTED **</strong></p><br><br>
+                <div class="remarks_section">
+                    <div class="remarks">
+                        <img src="./Images/man1.jpg" alt="man1"><br>
+                        <q>COVE IT ENTERPRISE really changed my style of dressing. I remember when I was rejected multiple times all because of dressing, buh this enterprise transformed me into a better person</q>
+                    </div>
+                    <div class="remarks">
+                        <img src="./Images/man2.jfif" alt="man2"><br>
+                        <q>I have been using their products for over years and I never for once have the mindset of switching to other brands</q>
+                    </div>
+                    <div class="remarks">
+                        <img src="./Images/man3.jfif" alt="man3"><br>
+                        <q>I am not worried of low income, the products i get form <strong>COVE IT ENTERPRISE</strong> is very affordable</q>
+                    </div>
+                </div>
+                <h2>OUR TOP PRODUCTS</h2>
+                <div class="remarks_section">
+                    <div class="remarks">
+                        <img src="./shoe_pictures/kid_shoes5-removebg-preview.png" alt="man1"><br>
+                        <p><strong>$675</strong></p><br>
+                        <p><del> <strong>$1990</strong></del</p><br>
+                    </div>
+                    <div class="remarks">
+                        <img src="./shoe_pictures/shoes3-removebg-preview.png" alt="man2"><br>
+                        <p>$566</p><br>
+                        <p><del><strong>$966</strong></del></p><br>
+                    </div>
+                    <div class="remarks">
+                        <img src="./shoe_pictures/women_shoes8-removebg-preview.png" alt="man3"><br>
+                        <p>$866</p><br>
+                        <p><del><strong>$1166</strong></del></p><br>
+                    </div>                    
+                </div>
+
+            </div>
+
+
+            </div>
+        </section>
+        
+       <!-- FAQ SECTION STARTS HERE   -->
+       <section class="faq_contents" id="faq_contents">
+            <div>
+                <h2>FREQUENTLY ASKED QUESTIONS</h2><br>
+                <details class="questions">
+                    <summary class="question">HOW DO I START WITH COVE IT ENTERPRISE ??</summary><br>
+                    <p class="answer">You can start by just signing up and opening account with us</p>
+                </details>
+                <details class="questions">
+                    <summary class="question">HOW DO I ACCESS COVE IT ENTERPRISE'S PRODUCTS ??</summary><br>
+                    <p class="answer">You can access our products anywhere, anyplace. In as much as you have a phone and internet</p>
+                </details>
+                <details class="questions">
+                    <summary class="question">HOW RELIABLE IS COVE IT ENTERPRISE ??</summary><br>
+                    <p class="answer">be rest assured, you can rely on our service. Our delivery pace is very solid</p>
+                </details>
+                <details class="questions">
+                    <summary class="question">HOW SECURED ??</summary><br>
+                    <p class="answer">COVE IT ENTERPRISE has a very strong cyber security team that are currently working on security. So, we got you covered</p>
+                </details>
+                <details class="questions">
+                    <summary class="question">HOW DO I START WITH COVE IT ENTERPRISE'S PRODUCTS??</summary><br>
+                    <p class="answer">By registering into our platform and viewing the products</p>
+                </details>
+            </div>
+       </section>
+
+       <!-- CONTACT SECTION STARTS HERE  -->
+       <section id="contact_section">
+        <div>
+            <h2>message us:</h2>
+            <ul>
+                <li><a href="#"><img src="./Images/facebook-icon-removebg-preview.png" alt="facebook"></a></li>
+                <li><a href="#"><img src="./Images/instagram-icon-removebg-preview.png" alt="instagram"></a></li>
+                <li><a href="#"><img src="./Images/twitter-logo-removebg-preview.png" alt="twitter"></a></li>
+                <li><a href="#"><img src="./Images/whatsapp-removebg-preview.png" alt="whatsapp"></a></li>
+            </ul>
+        </div>
+       </section>
+
+
+           <!-- FOOTER STARTS HERE -->
+    <footer class="footer" id="footer">
+        
+    </footer>
+       
+
+    </main>
+</body>
+</html>

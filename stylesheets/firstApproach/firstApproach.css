@@ -11,10 +11,257 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+::-webkit-scrollbar{
+    background-color: white;
+    border: 2px solid black;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #121212;
+}
+
 body{
     background-image: url(../../Images/shoe_background1.jfif);
     /* background-repeat: no-repeat; */
     background-position: top right;
     background-attachment: fixed;
     background-size: 400px;
+}
+
+.form_container{
+    font-size: 1.5rem;
+}
+
+.about{
+    display: flex;
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+
+.writeup{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--bg-color);
+    /* background: rgba(0, 0, 0, 0.635); */
+    width: 100%;
+}
+
+.writeup .remarks_section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+    gap: 1rem;
+}
+
+.writeup .remarks_section .remarks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.679);
+    box-shadow: 5px 30px 56.1276px rgb(55, 55, 55);
+    color: var(--text-color);
+    transition: all 0.5s;
+    margin: 1rem;
+}
+
+.writeup .remarks_section .remarks:hover{
+    background: var(--bg-color);
+}
+
+.writeup .remarks_section .remarks img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.about .writeup > h2, .about .writeup > p{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.faq_contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 7%;
+    background: transparent;
+}
+
+.faq_contents div{
+    border-radius: 15px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.679);
+    box-shadow: 5px 30px 56.1276px rgb(55, 55, 55);
+    color: var(--text-color);
+    transition: all 0.5s;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.faq_contents div:hover{
+    background: white;
+}
+
+.faq_contents div details{
+    margin: 1.5rem;
+}
+
+.faq_contents div details summary.question{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq_contents div details summary.question::marker{
+    color: rgba(255, 255, 255, 0);
+}
+
+.faq_contents div details p{
+    margin-left: 2rem;
+}
+
+#contact_section{
+    padding: 100px 7%;
+    display: block;
+    background: transparent;
+}
+
+#contact_section div{
+    border-radius: 15px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.679);
+    box-shadow: 5px 30px 56.1276px rgb(55, 55, 55);
+    color: var(--text-color);
+    transition: all 0.5s;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+#contact_section div:hover{
+    background: white;
+}
+
+#contact_section div ul{
+    margin: 2rem;
+}
+
+#contact_section div ul li{
+    margin: 1rem;
+}
+
+#contact_section div ul li img{
+    height: 30px;
+    width: 30px;
+}
+
+#contact_section div ul li:nth-child(2) img{
+    width: 40px !important;
+}
+
+.form_container{
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form-holder{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 400px;
+}
+
+.form-wrapper{
+    width: 100%;
+}
+
+.form_buttons{
+    padding-bottom: 1rem;
+}
+
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.5rem;
+    /* border: 2px solid red; */
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid yellow; */
+}
+
+.form form{
+    /* border: 2px solid purple; */
+    width: 90%;
+}
+
+.details input:not([type="submit"]){
+    outline: none;
+    border-bottom: 2px solid !important;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+.button{
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.button:hover{
+    color: black;
+    background-color: white;
+}
+
+
+#footer{
+    bottom: 0;
+    right: 0; left: 0;
+    padding: 80px 17%;
+    background-color: var(--text-color);
+    display: block;
+}
+
+#passwordNotice{
+    display: none;
+    width: 100%;
+    transition: all 0.5s;
+    background-color: #121212;
+    padding: 5px;
+}
+
+.passwordNotice{
+    color: red;
+}
+
+.passwordNotice::before{
+    position: relative;
+    margin-right: 5px;
+    content: "X";
+}
+
+.green_changed_text{
+    color: green !important;
+}
+
+#confirmPasswordNotice{
+    display: none;
 }

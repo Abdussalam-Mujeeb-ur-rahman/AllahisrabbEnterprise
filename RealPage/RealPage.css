@@ -4,7 +4,7 @@
         display: none;
     }
 }
-@media screen and (max-width:901px){
+@media screen and (max-width:900px){
     .header{
         padding: 1.5rem;
     }
@@ -27,6 +27,19 @@
         padding: 0.5rem;
         margin: 1.5rem;
     }
+    .header #search_here{
+        /* border: 2px solid red; */
+        position: absolute;
+        top: 115%;right: 7%;
+        background-color: var(--bg-color);
+        width: 80%;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: 0.5s;
+    }
     #home, .header .navbar button:hover{
         border-bottom: .1rem solid var(--bg-color);
     }
@@ -39,7 +52,15 @@
 }
 
 
+::-webkit-scrollbar{
+    background-color: white;
+    border: 2px solid black;
+    
+}
 
+::-webkit-scrollbar-thumb{
+    background-color: black;
+}
 
 
 
@@ -162,6 +183,11 @@ body{
     align-items: center;
     transform: scaleY(0);
     transform-origin: top;
+    transition: 0.5s;
+}
+
+.search_here_inOut{
+    transform: scaleY(1) !important;
 }
 
 .header .search_here input{
@@ -274,4 +300,15 @@ footer{
     padding: 80px 17%;
     background-color: var(--text-color);
     display: none;
+}
+
+/* LIGHTMODE EFFECTS STARTS HERE  */
+.black_backgroundColor{
+    background-color: var(--text-color);
+} 
+.white_textColor{
+    color: var(--bg-color);
+}
+.black_textColor{
+    color: var(--text-color);
 }
