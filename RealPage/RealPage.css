@@ -86,6 +86,7 @@
     border: none;
     text-transform: capitalize;
     transition: 0.2s linear;
+    text-decoration: none;
 }
 body{
     background-image: url(../../Images/shoe_background1.jfif);
