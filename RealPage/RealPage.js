@@ -1,3 +1,6 @@
+
+
+
 const harmburger = document.getElementById("harmburger");
 const navbar = document.getElementById("navbar");
 const mission_vision = document.getElementById("mission_vision");
@@ -16,6 +19,11 @@ const home = document.getElementById("home");
 const searchIcon = document.getElementById("search-icon");
 const header = document.getElementById("header");
 const search_here = document.getElementById("search_here");
+const photo = document.getElementById('photo')
+const file = document.getElementById('file')
+const file_button = document.getElementById('file_button')
+const profile = document.getElementById('profile')
+const profile_wrapper = document.getElementById('profile_wrapper')
 const kids = document.getElementsByClassName("kid");
 const men = document.getElementsByClassName("men");
 const women = document.getElementsByClassName("women");
@@ -23,8 +31,9 @@ const header_button = document.querySelectorAll("header > nav > button")
 const shop_prices = document.querySelectorAll("section > div > .item_holder")
 const cart = document.querySelectorAll("section > div > .item_holder > div  span")
 
-ArrayOfWhiteTextToggle = [cove_logo, searchIcon, light_mode, harmburger];
-ArrayToBlackBackgroundToggle = [items_wrapper, header, mission_vision]
+
+ArrayOfWhiteTextToggle = [cove_logo, searchIcon, light_mode, harmburger, profile_wrapper];
+ArrayToBlackBackgroundToggle = [items_wrapper, header, mission_vision, profile_wrapper]
 ArrayToWhiteBackgroundToggle = []
 
 harmburger.addEventListener("click", (e) => {
@@ -62,6 +71,7 @@ home.addEventListener("click", (e) => {
     footer.style.display="none";
     items_wrapper.style.display="none";
     displayNone(mission_vision)
+    displayNone(profile_wrapper)
 })
 
 searchIcon.addEventListener("click", (e) => {
@@ -93,6 +103,27 @@ light_mode.addEventListener("click", (e) => {
 
 })
 
+profile.addEventListener('click', (e) => {
+    displayFlex(profile_wrapper);
+    footer.style.display="none";
+    items_wrapper.style.display="none";
+    displayNone(mission_vision);
+})
+
+file.addEventListener('change', (e) => {
+    const choosedPhoto = e.target.files[0];
+
+    if(choosedPhoto){
+
+        const reader = new FileReader(); 
+
+        reader.addEventListener('load', (e) => {
+            photo.setAttribute('src', reader.result)
+        })
+
+        reader.readAsDataURL(choosedPhoto);
+    }
+})
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -136,3 +167,4 @@ loopingFunction = (item, classTitle) => {
         toggleFunction(n, classTitle)
     })
 }
+

@@ -309,7 +309,64 @@ section .item_container .item_holder div span{
 }
 
 
+#profile_wrapper{
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+#profile_wrapper #img_wrapper{
+    height: 200px;
+    width: 200px;
+    box-shadow: 0px 8px 54px grey;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#profile_wrapper #img_wrapper:hover #input_photo{
+    display: block;
+}
+
+#profile_wrapper #img_wrapper img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+#profile_wrapper #img_wrapper input{
+    display: none;
+}
+
+#profile_wrapper #img_wrapper #input_photo{
+    text-align: center;
+    position: relative;
+    bottom: 4rem;
+    padding-bottom: 100px;padding-top: 10px;
+    background-color: #121212;
+    color: white;
+    display: none;
+}
+
+#profile_wrapper #img_wrapper #input_photo label{
+    cursor: pointer;
+}
+
+#profile_wrapper #details{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#profile_wrapper #details p{
+    text-align: center;
+    text-transform: lowercase;
+}
+
+#profile_wrapper #details textarea{
+    border-bottom: 1px solid black;
+    background-color: transparent;
+}
 
 
 /* FOOTER STARTS HERE  */

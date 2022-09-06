@@ -1,0 +1,23 @@
+{
+  "name": "allahisrabbenterprise",
+  "version": "1.0.0",
+  "description": "for shopping ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdussalam-Mujeeb-ur-rahman/AllahisrabbEnterprise.git"
+  },
+  "author": "Abdussalam Mujeeb-ur-rahman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Abdussalam-Mujeeb-ur-rahman/AllahisrabbEnterprise/issues"
+  },
+  "homepage": "https://github.com/Abdussalam-Mujeeb-ur-rahman/AllahisrabbEnterprise#readme",
+  "keywords": [],
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

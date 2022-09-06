@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="RealPage.css">
     <script src="RealPage.js" defer></script>
+    <script src="../Scripts/firstApproach/firstApproach.js" defer></script>
+    <script src="User_details.js" defer></script>
     <script src="https://kit.fontawesome.com/a33530bb41.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <title>COVE IT ENTERPRISE</title>
@@ -325,7 +327,21 @@
 
 
     <!-- PROFILE PAGE HERE  -->
-    
+    <section class="profile" id="profile_wrapper">
+        <div id="img_wrapper">
+            <img src="../Images/account_circle.png" id="photo" >
+            <div id="input_photo">
+                <input type="file" name="file" id="file">
+                <label for="file" id="file_button" >CHOOSE PHOTO</label>
+            </div>
+        </div>
+        <div id="details">
+            <h2 id="Loggedname" contenteditable="true">YOUR NAME</h2>
+            <p id="Loggedemail" contenteditable="true" style="text-transform: lowercase;">your email</p>
+            <br><br>
+            <textarea name="bio" id="bio" cols="30" rows="1" placeholder="write about yourself"></textarea>
+        </div>
+    </section>
 
 
     <!-- FOOTER STARTS HERE -->
